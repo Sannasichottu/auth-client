@@ -5,7 +5,7 @@
   position: relative;
   font-size: 1rem;
 }
-.input input {
+.input label input {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   background-color: #544f5f;
   padding: 1em;
@@ -15,7 +15,7 @@
   font-size: 1rem;
   border: 2px solid transparent;
 }
-.input span {
+.input label span {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -25,22 +25,22 @@
   font-weight: 300;
   font-size: 0.85rem;
 }
-.input input:not(:-moz-placeholder-shown) + span {
+.input label input:not(:-moz-placeholder-shown) + span {
   color: transparent;
   transform: translate3d(0, -6px, 0) scale(0.75);
 }
-.input input:not(:-ms-input-placeholder) + span {
+.input label input:not(:-ms-input-placeholder) + span {
   color: transparent;
   transform: translate3d(0, -6px, 0) scale(0.75);
 }
-.input input:not(:placeholder-shown) + span {
+.input label input:not(:placeholder-shown) + span {
   color: transparent;
   transform: translate3d(0, -6px, 0) scale(0.75);
 }
-.input input:focus {
+.input label input:focus {
   border: 2px solid #f96a8b;
 }
-.input input:focus + span {
+.input label input:focus + span {
   top: -15px;
   font-size: 10px;
   background: linear-gradient(to right, #fbc02d, #f96a8b);
@@ -48,7 +48,7 @@
   padding: 0 5px;
   color: #fff;
 }
-.input .input_icon {
+.input label .input_icon {
   color: #1d1927;
   position: absolute;
   top: 50%;
@@ -56,4 +56,10 @@
   transform: translate(92%, -50%);
   width: 100%;
   cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .input label input {
+    width: 370px;
+  }
 }/*# sourceMappingURL=input.css.map */

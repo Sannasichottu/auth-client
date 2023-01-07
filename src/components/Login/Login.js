@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './login.css';
 import Input from '../Input/Input';
-import {FcGoogle} from 'react-icons/fc'
-import {MdVisibility} from 'react-icons/md'
-import {MdVisibilityOff} from 'react-icons/md'
+import {FcGoogle} from 'react-icons/fc';
+import {MdVisibility} from 'react-icons/md';
+import {MdVisibilityOff} from 'react-icons/md';
 
 const Login = () => {
-  const [visible, setVisible] = useState();
+  const [visible, setVisible] = useState(false);
   const handleClick = () => {
     setVisible(!visible)
   }
